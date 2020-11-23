@@ -1,4 +1,4 @@
 Insure landing page
 
-using HTML, CSS and Bootstrap framework
-Design from Frontend Mentor (https://www.frontendmentor.io/)
+<br>using HTML, CSS and Bootstrap framework
+<br>Design from Frontend Mentor (https://www.frontendmentor.io/)
