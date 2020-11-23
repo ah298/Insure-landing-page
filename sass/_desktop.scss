@@ -1,0 +1,60 @@
+//desktop view
+
+
+@media (min-width: 992px){
+
+        
+    //wrapper
+    .wrapper-2{
+        margin-top: 16rem;
+        margin-bottom: 1rem;
+    }
+
+
+    //Showcase
+    .showcase-body{
+        position: relative;
+        background-color: $darkViolet;
+
+        .img .desktop {
+            position: absolute;
+            width: 35%;
+            bottom: -40%;
+            right: 8%;      
+        }
+
+        .jumbotron{
+            position: static;
+
+            hr{
+                width: 10%;
+                background-color: $veryLightGray;
+                // margin-top: 40px;
+                // margin-bottom: 40px;
+    
+            }
+
+            &::before{
+                content: " ";
+                background: no-repeat url(../images/bg-pattern-intro-left-desktop.svg);
+                background-size: 90%;
+                width: 12.1875rem;
+                height: 84rem;
+                position: absolute;
+                top: 70%;
+                left: 0;
+            }
+        
+            &::after{
+                content: " ";
+                background: no-repeat url(../images/bg-pattern-intro-right-desktop.svg);
+                background-size: 70%;
+                width: 28.25rem;
+                height: 28.0625rem;
+                position: absolute;
+                right: -8.6rem;
+                top: 0;
+            }
+        }  
+    }
+}

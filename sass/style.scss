@@ -1,0 +1,184 @@
+// Variables
+$darkViolet: hsl(256, 26%, 20%);
+$grayishBlue: hsl(216, 30%, 68%);
+
+$veryDarkViolet: hsl(270, 9%, 17%);
+$darkGrayishViolet: hsl(273, 4%, 51%);
+$veryLightGray: hsl(0, 0%, 98%);
+
+//wrapper
+.wrapper-1{
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+}
+
+// Layout
+html{
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;    
+}
+
+footer{
+    font-size: 12px;
+    background-color: $veryLightGray;
+    background: url(../images/bg-pattern-footer-mobile.svg) no-repeat center top;
+    background-size: contain;
+}
+
+//button
+.btn  {
+    border-radius: 0;
+    border: 1px solid $veryLightGray;
+    font-weight: 700;
+}
+
+.navbar-light .navbar-toggler{
+    border-radius: 0;
+    border: 1px solid $veryDarkViolet;
+} 
+
+
+// font 
+h1, h2, h3 {
+    font-family: 'DM Serif Display', serif;
+}
+
+// Menu
+.nav-item{
+    border: none;
+    background-color: $veryDarkViolet;
+    font-weight: 700;
+}
+
+.nav-link {
+    width: 90%;
+    margin: auto;
+}
+
+.nav-link:last-child{
+    margin-bottom: 0.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link{
+    color: $veryLightGray;
+    border: 1px solid $veryLightGray;
+}
+
+.navbar-light .navbar-toggler[aria-expanded=true] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg width='1em' height='1em' viewBox='0 0 16 16' class='bi bi-x' fill='currentColor' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+
+}
+
+// Jumbotron
+.showcase-body{
+    color: $veryLightGray;
+
+    img.mobile, img.desktop{
+        width: 100%;
+    }
+
+    .jumbotron{
+        background-color: $darkViolet;
+        position: relative;
+
+        &::before{
+            content: " ";
+            background: no-repeat url(../images/bg-pattern-intro-left-mobile.svg);
+            width: 165px;
+            height: 168px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &::after{
+            content: " ";
+            background: no-repeat url(../images/bg-pattern-intro-right-mobile.svg);
+            width: 124px;
+            height: 330px;
+            position: absolute;
+            right: 0;
+            bottom: -30%;
+        }
+    }
+}
+
+.jumbotron h1, .jumbotron p{
+    max-width: 35rem;
+}
+
+
+// key-values section
+.key-values-hr{
+    width: 50%;
+    background-color: $grayishBlue;
+    margin-top: 90px;
+}
+
+.key-values p{
+    color: $darkGrayishViolet;
+}
+
+// Card
+.card{
+    max-width: 500px;
+}
+
+.card-img-top{
+    height: 45px;
+    width: 45px;
+}
+
+//how-we-work
+.how-we-work h1{
+    color: $veryLightGray;
+    max-width: 25rem;
+}
+
+.how-we-work-body{
+    height: 40vh;
+    min-height: 300px;
+    background: $darkViolet
+    url(../images/bg-pattern-how-we-work-mobile.svg) 
+    no-repeat;
+    background-position: top right;
+}
+
+//footer
+footer hr{
+    width: 50%;
+    background-color: $darkGrayishViolet;
+}
+
+.footer-nav, .footer-nav h6{
+    font-weight: 700;
+}
+
+.footer-nav h6{
+    color: $darkGrayishViolet;
+}
+
+.footer-nav a{
+    text-decoration: none;
+    color: $veryDarkViolet;
+    display: block;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import 'tablet';
+@import 'desktop';
+@import 'hover';

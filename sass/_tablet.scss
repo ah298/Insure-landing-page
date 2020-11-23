@@ -1,0 +1,53 @@
+//tablet view
+
+@media(min-width:750px){
+
+    //navbar
+    .nav-item{
+        background-color: white;
+        font-weight: 700;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        color: $darkGrayishViolet;
+    }
+
+    .navbar-light .navbar-nav .active>.nav-link,
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link.show,
+    .navbar-light .navbar-nav .show>.nav-link{
+        color: $veryDarkViolet;
+        border: 1px solid $veryDarkViolet;
+    }
+
+    .nav-link {
+        width: 100%;
+    }
+
+    // key-values section
+    .key-values-hr{
+        width: 10%;
+    }
+
+    //how-we-work
+    .how-we-work-body{
+        height: 20vh;
+        min-height: 240px;
+        background: $darkViolet
+        url(../images/bg-pattern-how-we-work-desktop.svg) 
+        no-repeat;
+        background-position: top right;
+    }
+
+    //footer
+    footer hr{
+        width: 100%;
+    }
+
+    footer{
+        background-color: $veryLightGray;
+        background: url(../images/bg-pattern-footer-desktop.svg) no-repeat left top;
+        background-size: 35%;
+    }
+
+}

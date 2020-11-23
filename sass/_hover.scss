@@ -1,0 +1,44 @@
+//hover
+
+.navbar-nav a:hover{
+    color: $grayishBlue !important;
+    transition: all 200ms ease-in;
+}
+
+.navbar-nav .active a:hover{
+    background-color: $veryLightGray;
+    color: $veryDarkViolet !important;
+    transition: all 200ms ease-in;
+}
+
+// social media icons
+.social-link:hover svg path{
+    fill: $veryDarkViolet;
+    transition: all 200ms ease-in;
+}
+
+//website page link
+.footer-nav a:hover{
+    text-decoration: underline;
+    transition: all 200ms ease-in;
+}
+
+
+@media(min-width:750px){
+    .navbar-nav a:hover{
+        border: none;
+        color: $veryDarkViolet !important;
+    }
+
+    .navbar-nav .active a:hover{
+        background-color: $veryDarkViolet !important;
+        color: $veryLightGray !important;
+    }
+    
+}
+
+@media (min-width: 992px){
+
+    
+
+}
