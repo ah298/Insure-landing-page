@@ -7,7 +7,6 @@ body {
   font-family: 'Karla', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  overflow-x: hidden;
 }
 
 footer {
@@ -231,11 +230,11 @@ footer hr {
   .showcase-body .jumbotron::after {
     content: " ";
     background: no-repeat url(../images/bg-pattern-intro-right-desktop.svg);
-    background-size: 70%;
-    width: 28.25rem;
-    height: 28.0625rem;
+    background-size: contain;
+    width: 341px;
+    height: 500px;
     position: absolute;
-    right: -8.6rem;
+    right: 0;
     top: 0;
   }
 }
