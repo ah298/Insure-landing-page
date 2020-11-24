@@ -13,14 +13,12 @@ $veryLightGray: hsl(0, 0%, 98%);
 }
 
 // Layout
-html{
-    overflow-x: hidden;
-}
 
 body{
     font-family: 'Karla', sans-serif;
     font-size: 16px;
     font-weight: 400;    
+    overflow-x: hidden;
 }
 
 footer{
