@@ -9,7 +9,6 @@ $veryLightGray: hsl(0, 0%, 98%);
 //wrapper
 .wrapper-1{
     margin-top: 8rem;
-    margin-bottom: 1rem;
 }
 
 // Layout
@@ -17,14 +16,14 @@ $veryLightGray: hsl(0, 0%, 98%);
 body{
     font-family: 'Karla', sans-serif;
     font-size: 16px;
-    font-weight: 400;    
-    overflow-x: hidden;
+    font-weight: 400;
 }
 
 footer{
     font-size: 12px;
-    background-color: $veryLightGray;
     background: url(../images/bg-pattern-footer-mobile.svg) no-repeat center top;
+    background-color: $veryLightGray;
+    ;
     background-size: contain;
 }
 
@@ -174,7 +173,7 @@ footer hr{
     display: block;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { background-color: $veryLightGray; font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @import 'tablet';
