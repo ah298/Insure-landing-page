@@ -1,6 +1,5 @@
 .wrapper-1 {
   margin-top: 8rem;
-  margin-bottom: 1rem;
 }
 
 body {
@@ -11,8 +10,8 @@ body {
 
 footer {
   font-size: 12px;
-  background-color: #fafafa;
   background: url(../images/bg-pattern-footer-mobile.svg) no-repeat center top;
+  background-color: #fafafa;
   background-size: contain;
 }
 
@@ -150,6 +149,7 @@ footer hr {
 }
 
 .attribution {
+  background-color: #fafafa;
   font-size: 11px;
   text-align: center;
 }
@@ -189,8 +189,8 @@ footer hr {
     width: 100%;
   }
   footer {
-    background-color: #fafafa;
     background: url(../images/bg-pattern-footer-desktop.svg) no-repeat left top;
+    background-color: #fafafa;
     background-size: 35%;
   }
 }
